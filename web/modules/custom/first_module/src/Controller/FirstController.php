@@ -10,6 +10,12 @@ class FirstController extends ControllerBase
 
   public function first()
   {
-    return new Response('Hello from my first drupal 10 module!');
+
+    $p = [
+      '#type' => 'html_tag',
+      '#tag' => 'p',
+      '#value' => $this->t('This is the first module'),
+    ];
+    return $p;
   }
 }
