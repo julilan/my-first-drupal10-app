@@ -1,0 +1,5 @@
+name: 'new-module'
+type: module
+description: 'it&#039;s a new module'
+package: Custom
+core_version_requirement: ^10
