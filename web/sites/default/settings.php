@@ -832,7 +832,7 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
-$databases['default']['default'] = array (
+$databases['default']['default'] = array(
   'database' => 'drupal10',
   'username' => 'drupal10',
   'password' => 'drupal10',
@@ -844,3 +844,11 @@ $databases['default']['default'] = array (
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 );
 $settings['config_sync_directory'] = 'sites/default/files/config_FyXiF8I43r9gJ3LM2tQsmjsLraalEi1pPIddF4XHRMEvV0vbRxHMthWZ_3DH6gitFhH4ggiKKg/sync';
+
+// Spit out verbal logging message
+$config['system.logging']['error_level'] = 'verbose';
+
+// For Environment indicator
+$config['environment_indicator.indicator']['bg_color'] = '#ff0000';
+$config['environment_indicator.indicator']['fg_color'] = '#ffffff';
+$config['environment_indicator.indicator']['name'] = 'Local';

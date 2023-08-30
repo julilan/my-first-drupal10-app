@@ -1,0 +1,23 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
+use Drupal\Core\Link;
+
+/**
+ * @file
+ * Implements hook_help().
+ */
+
+function links_example_help($route_name, RouteMatchInterface $route_match)
+{
+  $url = Url::fromRoute('links_example.page');
+  $link = Link::fromTextAndUrl('Go to links example page', $url);
+  if ($route_name == 'help.page.links_example') {
+    $output = '';
+    $output .= '<h3>' . t('About') . '</h3>';
+    $output .= '<p>' . t('This is a links module for the customer.') . '</p>';
+    $output .= $link->toString();
+    return $output;
+  }
+}
