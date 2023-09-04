@@ -17,6 +17,7 @@
     "require": {
         "composer/installers": "^2.0",
         "drupal/adminimal_theme": "^1.7",
+        "drupal/bartik": "^1.0",
         "drupal/blog": "^3.1",
         "drupal/bootstrap": "^3.29",
         "drupal/core-composer-scaffold": "^10.0",
