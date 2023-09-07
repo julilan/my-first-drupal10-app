@@ -1,0 +1,15 @@
+name: Dusk Theme
+description: "Dusk is a simple Drupal theme"
+type: theme
+base theme: false
+version: VERSION
+core_version_requirement: ^9 || ^10
+package: Custom
+libraries:
+  - dusk/styling
+regions:
+  header: Header
+  menu: Main menu
+  content: Content
+  sidebar: Sidebar
+  footer: Footer

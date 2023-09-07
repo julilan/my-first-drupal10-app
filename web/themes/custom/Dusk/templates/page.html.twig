@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <header>
+      {{ page.header }}
+      <nav class="menu">
+        {{ page.menu }}
+      </nav>
+    </header>
+    <main>
+    
+      <div class="content">
+        {{ page.content }}
+      </div>
+
+      {% if page.sidebar %}
+      <div class="sidebar">
+        {{ page.sidebar }}
+      </div>
+      {% endif %}
+
+    </main>
+    <footer>
+      {{ page.footer }}
+    </footer>
+  </body>
+</html>
